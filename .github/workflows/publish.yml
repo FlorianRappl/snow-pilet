@@ -1,0 +1,18 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish-pilet:
+    name: Build and Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Publish Pilet
+      uses: smapiot/publish-pilet-action@v4
+      with:
+        feed: christmas
+        api-key: ${{ secrets.apiKey }}

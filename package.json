@@ -1,0 +1,35 @@
+{
+  "name": "snow-pilet",
+  "version": "0.1.0",
+  "description": "A special pilet to have some snow.",
+  "keywords": [
+    "pilet",
+    "christmas"
+  ],
+  "importmap": {
+    "imports": {},
+    "inherit": ["sample-piral"]
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.0",
+    "react": "^18.0.0",
+    "tslib": "2.5.2",
+    "piral-cli": "latest",
+    "piral-cli-esbuild": "latest",
+    "sample-piral": "latest"
+  },
+  "scripts": {
+    "debug-pilet": "pilet debug",
+    "build-pilet": "pilet build",
+    "upgrade-pilet": "pilet upgrade --force-overwrite yes",
+    "publish-pilet": "pilet publish --fresh --api-key $PILET_API_KEY --url $PILET_API_URL",
+    "start": "pilet debug"
+  },
+  "main": "dist/index.js",
+  "source": "src/index.tsx",
+  "files": [
+    "dist"
+  ]
+}
