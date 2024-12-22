@@ -14,7 +14,7 @@
   "devDependencies": {
     "@types/node": "^18.0.0",
     "@types/react": "^18.0.0",
-    "react": "^18.0.0",
+    "react": "18.2.0",
     "tslib": "2.5.2",
     "piral-cli": "latest",
     "piral-cli-esbuild": "latest",
